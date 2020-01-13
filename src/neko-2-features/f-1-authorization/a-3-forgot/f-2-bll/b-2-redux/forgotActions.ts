@@ -8,11 +8,13 @@ export const FORGOT = 'FORGOT/SOME';
 
 interface IForgotSome { // blank
     type: typeof FORGOT;
+
 }
 
 export type IForgotActions = IForgotSome;
 
 export const forgotSome = (): IForgotSome => ({ // blank
     type: FORGOT,
+
 });
 

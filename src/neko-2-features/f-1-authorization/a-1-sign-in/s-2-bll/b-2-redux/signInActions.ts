@@ -8,11 +8,13 @@ export const SIGN_IN = 'SIGN_IN/SOME'; // blank
 
 interface ISignInSome { // blank
     type: typeof SIGN_IN;
+
 }
 
 export type ISignInActions = ISignInSome;
 
 export const signInSome = (): ISignInSome => ({ // blank
     type: SIGN_IN,
+    
 });
 

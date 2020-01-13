@@ -6,6 +6,7 @@ export const signInReducer = (state = signInInitialState, action: ISignInActions
         case SIGN_IN: { // blank
             return {
                 ...state,
+
             }
         }
 

@@ -6,6 +6,7 @@ export const forgotReducer = (state = forgotInitialState, action: IForgotActions
         case FORGOT: { // blank
             return {
                 ...state,
+
             }
         }
 

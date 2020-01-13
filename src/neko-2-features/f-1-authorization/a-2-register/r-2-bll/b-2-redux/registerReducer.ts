@@ -6,6 +6,7 @@ export const registerReducer = (state = registerInitialState, action: IRegisterA
         case REGISTER: { // blank
             return {
                 ...state,
+
             }
         }
 

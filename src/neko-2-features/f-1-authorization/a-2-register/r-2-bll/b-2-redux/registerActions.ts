@@ -8,10 +8,12 @@ export const REGISTER = 'REGISTER/SOME';
 
 interface IRegisterSome { // blank
     type: typeof REGISTER;
+
 }
 
 export type IRegisterActions = IRegisterSome;
 
 export const registerSome = (): IRegisterSome => ({ // blank
     type: REGISTER,
+
 });
