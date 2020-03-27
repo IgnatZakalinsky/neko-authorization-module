@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6d545e654445e51298dfea9bef67042f",
+    "revision": "6b2e79ea8a3216ced9598177c1af08a2",
     "url": "/neko-authorization-module/index.html"
   },
   {
-    "revision": "9202ec9d3d399684a47f",
+    "revision": "c140908b41b873b4fcec",
     "url": "/neko-authorization-module/static/css/main.8a48f644.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/neko-authorization-module/static/js/2.d0128fd4.chunk.js.LICENSE"
   },
   {
-    "revision": "9202ec9d3d399684a47f",
-    "url": "/neko-authorization-module/static/js/main.4267bae6.chunk.js"
+    "revision": "c140908b41b873b4fcec",
+    "url": "/neko-authorization-module/static/js/main.54b3939f.chunk.js"
   },
   {
     "revision": "eae7df98d94175495c92",
