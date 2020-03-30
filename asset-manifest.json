@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/neko-authorization-module/static/css/main.8a48f644.chunk.css",
-    "main.js": "/neko-authorization-module/static/js/main.54b3939f.chunk.js",
-    "main.js.map": "/neko-authorization-module/static/js/main.54b3939f.chunk.js.map",
-    "runtime-main.js": "/neko-authorization-module/static/js/runtime-main.6d94ecc1.js",
-    "runtime-main.js.map": "/neko-authorization-module/static/js/runtime-main.6d94ecc1.js.map",
-    "static/js/2.d0128fd4.chunk.js": "/neko-authorization-module/static/js/2.d0128fd4.chunk.js",
-    "static/js/2.d0128fd4.chunk.js.map": "/neko-authorization-module/static/js/2.d0128fd4.chunk.js.map",
+    "main.js": "/neko-authorization-module/static/js/main.b7b9b4ba.chunk.js",
+    "main.js.map": "/neko-authorization-module/static/js/main.b7b9b4ba.chunk.js.map",
+    "runtime-main.js": "/neko-authorization-module/static/js/runtime-main.3ec24c55.js",
+    "runtime-main.js.map": "/neko-authorization-module/static/js/runtime-main.3ec24c55.js.map",
+    "static/js/2.01536541.chunk.js": "/neko-authorization-module/static/js/2.01536541.chunk.js",
+    "static/js/2.01536541.chunk.js.map": "/neko-authorization-module/static/js/2.01536541.chunk.js.map",
     "index.html": "/neko-authorization-module/index.html",
-    "precache-manifest.8f8ee59f79b81f22fd025c0bac2cef75.js": "/neko-authorization-module/precache-manifest.8f8ee59f79b81f22fd025c0bac2cef75.js",
+    "precache-manifest.8ce9c0e24ef815aa29bd66b81d4c1c99.js": "/neko-authorization-module/precache-manifest.8ce9c0e24ef815aa29bd66b81d4c1c99.js",
     "service-worker.js": "/neko-authorization-module/service-worker.js",
     "static/css/main.8a48f644.chunk.css.map": "/neko-authorization-module/static/css/main.8a48f644.chunk.css.map",
-    "static/js/2.d0128fd4.chunk.js.LICENSE": "/neko-authorization-module/static/js/2.d0128fd4.chunk.js.LICENSE"
+    "static/js/2.01536541.chunk.js.LICENSE.txt": "/neko-authorization-module/static/js/2.01536541.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6d94ecc1.js",
-    "static/js/2.d0128fd4.chunk.js",
+    "static/js/runtime-main.3ec24c55.js",
+    "static/js/2.01536541.chunk.js",
     "static/css/main.8a48f644.chunk.css",
-    "static/js/main.54b3939f.chunk.js"
+    "static/js/main.b7b9b4ba.chunk.js"
   ]
 }
