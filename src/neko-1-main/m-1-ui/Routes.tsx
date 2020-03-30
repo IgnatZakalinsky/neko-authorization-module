@@ -24,6 +24,7 @@ const Routes: React.FC = () => {
             <Route path={REGISTER_PATH} render={() => <RegisterPage/>}/>
             <Route path={FORGOT_PATH} render={() => <ForgotPage/>}/>
             <Route path={SET_NEW_PASS_PATH + '/:token'} render={() => <SetNewPassPage/>}/>
+            <Route path={SET_NEW_PASS_PATH} render={() => <SetNewPassPage/>}/>
 
             <Route path={NEKO_PATH} render={() => <NekoPage/>}/>
 

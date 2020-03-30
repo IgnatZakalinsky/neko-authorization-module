@@ -3,6 +3,7 @@ import {IAppStore} from "../../../../neko-1-main/m-2-bll/store";
 import {passwordCoding} from "../../../f-2-helpers/h-1-authorization/passwordCoding";
 import {SetNewPassAPI} from "../s-3-dal/SetNewPassAPI";
 import {ISetNewPassActions} from "./b-2-redux/setNewPassActions";
+import {setNewPassError, setNewPassLoading, setNewPassSuccess} from "./b-1-callbacks/setNewPassBooleanCallbacks";
 
 type Return = void;
 type ExtraArgument = {};
@@ -12,21 +13,21 @@ export const setNewPass =
     (password: string, token: string): ThunkAction<Return, IAppStore, ExtraArgument, ISetNewPassActions> =>
         async (dispatch: ThunkDispatch<IAppStore, ExtraArgument, ISetNewPassActions>, getStore: IGetStore) => {
 
-            // registerLoading(dispatch, true);
+            setNewPassLoading(dispatch, true);
 
             try {
                 const data = await SetNewPassAPI.setNewPass(passwordCoding(password), token);
 
                 if (data.error) {
-                    // registerError(dispatch, data.error);
+                    setNewPassError(dispatch, data.error);
 
                 } else {
-                    // registerSuccess(dispatch, true);
+                    setNewPassSuccess(dispatch, true);
 
                     console.log('Neko setNewPass Success!', data)
                 }
             } catch (e) {
-                // registerError(dispatch, e.response.data.error);
+                setNewPassError(dispatch, e.response.data.error);
 
                 console.log('Neko setNewPass Error!', {...e})
             }

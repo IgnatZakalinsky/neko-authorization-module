@@ -4,31 +4,26 @@ import {FlexColumnCenterCenter} from "../../../../neko-3-styles/flex-containers"
 import {SIGN_IN_PATH} from "../../../../neko-1-main/m-1-ui/Routes";
 
 interface ISetNewPassProps {
-    // loading: boolean;
-    // error: string;
-    // success: boolean;
-    //
-    // email: string;
-    //
-    // setEmailCallback: (email: string) => void;
-    //
-    // forgotCallback: () => void;
+    loading: boolean;
+    error: string;
+    success: boolean;
 
-    pass1: string;
-    pass2: string;
-    setPass1: (pass: string) => void;
-    setPass2: (pass: string) => void;
+    password1: string;
+    setPassword1Callback: (pass: string) => void;
+    password2: string;
+    setPassword2Callback: (pass: string) => void;
+
+    setNewPass: () => void;
 }
 
 const SetNewPass: React.FC<ISetNewPassProps> = (
     {
-        // loading, error, success,
-        //
-        // email, setEmailCallback,
-        //
-        // forgotCallback
-        pass1, setPass1,
-        pass2, setPass2,
+        loading, error, success,
+
+        password1, setPassword1Callback,
+        password2, setPassword2Callback,
+
+        setNewPass
     }
 ) => {
 
@@ -42,27 +37,27 @@ const SetNewPass: React.FC<ISetNewPassProps> = (
         >
             SetNewPass
 
-            {/*{loading*/}
-                {/*? <div style={{color: 'orange'}}>loading...</div>*/}
-                {/*: error*/}
-                    {/*? <div style={{color: 'red'}}>{error}</div>*/}
-                    {/*: success*/}
-                        {/*? <div style={{color: 'lime'}}>Success!</div>*/}
-                        {/*: <div><br/></div>*/}
-            {/*}*/}
+            {loading
+                ? <div style={{color: 'orange'}}>loading...</div>
+                : error
+                    ? <div style={{color: 'red'}}>{error}</div>
+                    : success
+                        ? <div style={{color: 'lime'}}>Success!</div>
+                        : <div><br/></div>
+            }
 
             <input
-                value={pass1}
-                onChange={e => setPass1(e.currentTarget.value)}
+                value={password1}
+                onChange={e => setPassword1Callback(e.currentTarget.value)}
             />
             <input
-                value={pass2}
-                onChange={e => setPass2(e.currentTarget.value)}
+                value={password2}
+                onChange={e => setPassword2Callback(e.currentTarget.value)}
             />
 
             <button
-                // onClick={forgotCallback}
-                // disabled={loading || success}
+                onClick={setNewPass}
+                disabled={loading || success}
             >Set new password</button>
 
             <NavLink to={SIGN_IN_PATH}>Sign In</NavLink>
